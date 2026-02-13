@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DocMaker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>DocMaker</h1>
+
+<div id="loginBox">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="dashboard" style="display:none;">
+  <h2>Welcome <span id="userDisplay"></span></h2>
+  <button onclick="logout()">Logout</button>
+
+  <h3>Add Product (Admin)</h3>
+  <input type="text" id="productName" placeholder="Product Name">
+  <input type="text" id="productPrice" placeholder="Price">
+  <button onclick="addProduct()">Add</button>
+
+  <h3>Products</h3>
+  <div id="productList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
